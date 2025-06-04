@@ -4,72 +4,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAYAM S.R.L. - Laboratorio Geotécnico</title>
-  <link href="style.css" rel="stylesheet" />
+  <title>MAYAM S.R.L. | Laboratorio de Mecánica de Suelos y Concreto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="header-centered">
-    <img src="logo.png" alt="Logo MAYAM S.R.L." class="logo-centered" />
+  <header class="site-header">
+    <img src="logo.png" alt="Logo MAYAM S.R.L." class="logo-centered">
     <nav>
-      <a href="#">Inicio</a>
+      <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
-      <a href="#ensayos">Ensayos Acreditados</a>
+      <a href="#ensayos">Ensayos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Precisión y tecnología en control de calidad</h1>
-      <p>Laboratorio Geotécnico y Ensayo de Materiales</p>
-    </section>
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <h1>Soluciones confiables en ensayos de laboratorio para su proyecto</h1>
+      <p>Especialistas en suelos, concreto y topografía</p>
+    </div>
+  </section>
 
-    <section id="servicios">
-      <h2>Servicios Especializados</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Estudios de Mecánica de Suelos</h3>
-          <ul>
-            <li>Trabajos de campo</li>
-            <li>Caracterización geotécnica</li>
-            <li>Ensayos de laboratorio</li>
-            <li>Evaluación de cimentaciones</li>
-            <li>Capacidad admisible de carga y asentamientos</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Estudios de Canteras y Fuentes de Agua</h3>
-          <ul>
-            <li>Agregados: afirmado, base, sub base, concreto</li>
-            <li>Fuentes de agua para obras</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Diseño de Mezclas de Concreto</h3>
-          <ul>
-            <li>Sin aditivo</li>
-            <li>Con aditivo</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section class="features" id="servicios">
+    <h2>Áreas de Especialización</h2>
+    <div class="card-grid">
+      <div class="card icon-card"><i class="fa-solid fa-mountain-sun"></i><h3>Suelos</h3></div>
+      <div class="card icon-card"><i class="fa-solid fa-flask-vial"></i><h3>Concreto</h3></div>
+      <div class="card icon-card"><i class="fa-solid fa-ruler-combined"></i><h3>Topografía</h3></div>
+    </div>
+  </section>
 
-    <section id="ensayos">
-      <h2>Ensayos Acreditados</h2>
-      <div class="card-grid">
-        <div class="card"><strong>Contenido de Humedad</strong><br>ASTM D2216-19</div>
-        <div class="card"><strong>Gravedad Específica de Sólidos</strong><br>ASTM D854-14</div>
-        <div class="card"><strong>Análisis Granulométrico</strong><br>NTP 339.128 (2019)</div>
-        <div class="card"><strong>Límites de Atterberg</strong><br>ASTM D4318-17Ɛ1</div>
-        <div class="card"><strong>Proctor Estándar</strong><br>ASTM D698-12Ɛ2</div>
-        <div class="card"><strong>Proctor Modificado</strong><br>ASTM D1557-12Ɛ1</div>
-        <div class="card"><strong>CBR de Suelos</strong><br>ASTM D1883-21</div>
-        <div class="card"><strong>Compresión de Concreto</strong><br>ASTM C39/C39M-21</div>
-      </div>
-    </section>
-  </main>
+  <section class="tests" id="ensayos">
+    <h2>Ensayos Acreditados</h2>
+    <div class="card-grid">
+      <div class="card"><strong>Contenido de Humedad</strong><br>ASTM D2216-19</div>
+      <div class="card"><strong>Gravedad Específica de Sólidos</strong><br>ASTM D854-14</div>
+      <div class="card"><strong>Análisis Granulométrico</strong><br>NTP 339.128 (2019)</div>
+      <div class="card"><strong>Límites de Atterberg</strong><br>ASTM D4318-17Ɛ1</div>
+      <div class="card"><strong>Proctor Estándar</strong><br>ASTM D698-12Ɛ2</div>
+      <div class="card"><strong>Proctor Modificado</strong><br>ASTM D1557-12Ɛ1</div>
+      <div class="card"><strong>CBR de Suelos</strong><br>ASTM D1883-21</div>
+      <div class="card"><strong>Compresión de Concreto</strong><br>ASTM C39/C39M-21</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o necesitas una cotización? Escríbenos a través de WhatsApp.</p>
+    <a href="https://wa.me/51998025666" class="whatsapp-button" target="_blank">Enviar mensaje</a>
+  </section>
 
   <footer>
     <p>© 2025 MAYAM S.R.L. - Todos los derechos reservados</p>
   </footer>
+
+  <a href="https://wa.me/51998025666" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">💬</a>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.card', { delay: 100, duration: 800, origin: 'bottom', distance: '20px' });
+  </script>
 </body>
 </html>
